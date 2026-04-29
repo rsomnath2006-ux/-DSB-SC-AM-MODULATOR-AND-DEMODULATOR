@@ -58,6 +58,26 @@ To write a program to perform DSBSC modulation and demodulation using SCI LAB an
 
 •	Verify the generated waveform using Tabulation and Model Waveform
 
+# PROGRAM:
+~~~
+Am=11.95;
+fm=1840;
+fs=184000;
+t=0:1/fs:2/fm;
+Ac=20.315;
+fc=18400;
+em=Am*cos(2*3.14*fm*t);
+subplot(3,1,1);
+plot(t,em);
+ec=Ac*cos(2*3.14*fc*t);
+subplot(3,1,2);
+plot(t,ec);
+eAM1=(Ac+em).*cos(2*3.14*fc*t); 
+eAM2=(Ac-em).*cos(2*3.14*fc*t); 
+eDSBSC=eAM1-eAM2;
+subplot(3,1,3);
+plot(t,eDSBSC);
+~~~
 # MODEL GRAPH:
 
 <img width="703" height="679" alt="image" src="https://github.com/user-attachments/assets/5138c677-2394-473d-af8a-63d597451e49" />
@@ -67,6 +87,7 @@ To write a program to perform DSBSC modulation and demodulation using SCI LAB an
 <img width="1552" height="969" alt="DSBSC modulation" src="https://github.com/user-attachments/assets/cb78a1be-9e50-4ac3-8600-e5499862ac9a" />
 
 # TABULATION:
+<img width="1600" height="969" alt="DSBSC modulation table" src="https://github.com/user-attachments/assets/60489741-4d32-4fe0-8122-9139d729a381" />
 
 # Result:
   Thus the DSB-SC-AM Modulation and Demodulation is generated.
