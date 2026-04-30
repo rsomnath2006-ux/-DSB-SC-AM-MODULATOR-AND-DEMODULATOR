@@ -82,7 +82,7 @@ plot(t,eDSBSC);
 
 <img width="703" height="679" alt="image" src="https://github.com/user-attachments/assets/5138c677-2394-473d-af8a-63d597451e49" />
 
-# GRAPH
+# OUTPUT WAVEFORM:
 
 <img width="1552" height="969" alt="DSBSC modulation" src="https://github.com/user-attachments/assets/cb78a1be-9e50-4ac3-8600-e5499862ac9a" />
 
